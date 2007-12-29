@@ -5,6 +5,13 @@
 " NOTE:
 " Currently I'm barely interested in Robocom game. But if you have some
 " patches or suggestions feel free to send them.
+
+if version < 600
+  syntax clear
+elseif exists("b:current_syntax")
+  finish
+endif
+
 syntax clear
 syntax case ignore
 
